@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dein Parfum — Empfehlung</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <h1>Dein Parfum</h1>
+    <div class="menu-item" data-target="landing">🏠 Start</div>
+    <div class="menu-item" data-target="fragebogen">🧾 Fragebogen</div>
+    <div class="menu-item" data-target="trends">🌸 Trends</div>
+    <div class="menu-item" data-target="favoriten">💜 Favoriten</div>
+    <a class="menu-item" href="impressum.html">ℹ️ Impressum</a>
+  </aside>
+
+  <main>
+    <!-- Landing -->
+    <section id="landing" class="active card-section">
+      <h2>Willkommen bei Dein Parfum</h2>
+      <p>Finde deinen perfekten Duft – abgestimmt auf Stil, Stimmung und Anlass.</p>
+      <div class="cta-row">
+        <button class="btn" id="startBtn">Jetzt starten</button>
+        <button class="btn ghost" id="randomBtn">Überrasch mich</button>
+      </div>
+    </section>
+
+    <!-- Fragebogen -->
+    <section id="fragebogen" class="card-section">
+      <h2>Finde deinen Duft</h2>
+      <form id="duftForm">
+
+        <label>Budget</label>
+        <div class="radio-group">
+          <label class="radio"><input type="radio" name="budget" value="Unter 50 €" checked> Unter 50 €</label>
+          <label class="radio"><input type="radio" name="budget" value="50–100 €"> 50–100 €</label>
+          <label class="radio"><input type="radio" name="budget" value="Über 100 €"> Über 100 €</label>
+        </div>
+
+        <label>Jahreszeit</label>
+        <div class="radio-group">
+          <label class="radio"><input type="radio" name="season" value="Frühling" checked> Frühling</label>
+          <label class="radio"><input type="radio" name="season" value="Sommer"> Sommer</label>
+          <label class="radio"><input type="radio" name="season" value="Herbst"> Herbst</label>
+          <label class="radio"><input type="radio" name="season" value="Winter"> Winter</label>
+        </div>
+
+        <label>Duftrichtung</label>
+        <div class="radio-group">
+          <label class="radio"><input type="radio" name="duft" value="Süß" checked> Süß</label>
+          <label class="radio"><input type="radio" name="duft" value="Frisch"> Frisch</label>
+          <label class="radio"><input type="radio" name="duft" value="Holzig"> Holzig</label>
+          <label class="radio"><input type="radio" name="duft" value="Orientalisch"> Orientalisch</label>
+          <label class="radio"><input type="radio" name="duft" value="Blumig"> Blumig</label>
+        </div>
+
+        <label>Anlass</label>
+        <div class="radio-group">
+          <label class="radio"><input type="radio" name="occasion" value="Freizeit" checked> Freizeit</label>
+          <label class="radio"><input type="radio" name="occasion" value="Arbeit"> Arbeit</label>
+          <label class="radio"><input type="radio" name="occasion" value="Schule"> Schule</label>
+          <label class="radio"><input type="radio" name="occasion" value="Ausgehen"> Ausgehen</label>
+          <label class="radio"><input type="radio" name="occasion" value="Besonderer Anlass"> Besonderer Anlass</label>
+        </div>
+
+        <label>Alter</label>
+        <div class="radio-group">
+          <label class="radio"><input type="radio" name="age" value="unter 20" checked> unter 20</label>
+          <label class="radio"><input type="radio" name="age" value="20–30"> 20–30</label>
+          <label class="radio"><input type="radio" name="age" value="30–40"> 30–40</label>
+          <label class="radio"><input type="radio" name="age" value="über 40"> über 40</label>
+        </div>
+
+        <label>Geschlecht</label>
+        <div class="radio-group">
+          <label class="radio"><input type="radio" name="geschlecht" value="Weiblich" checked> Weiblich</label>
+          <label class="radio"><input type="radio" name="geschlecht" value="Männlich"> Männlich</label>
+          <label class="radio"><input type="radio" name="geschlecht" value="Neutral"> Neutral</label>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn" type="button" id="searchBtn">Suchen</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Ergebnis -->
+    <section id="ergebnis" class="card-section">
+      <h2>Dein Parfum</h2>
+      <div class="result-card">
+        <img id="resultImg" src="" alt="Parfum Bild" class="result-img">
+        <div class="result-meta">
+          <h3 id="resultName"></h3>
+          <p id="resultDesc"></p>
+          <div class="result-actions">
+            <button class="btn" id="similarBtn">Ähnliche Düfte</button>
+            <button class="btn ghost" id="favBtn">❤ Favorit</button>
+            <a id="shopLink" class="btn ghost" target="_blank" rel="noopener">Im Shop suchen</a>
+            <button class="btn" onclick="show('fragebogen')">Zurück</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="similarList" class="product-grid small"></div>
+    </section>
+
+    <!-- Trends -->
+    <section id="trends" class="card-section">
+      <h2>Aktuelle Parfum-Trends</h2>
+      <div class="product-grid" id="trendGrid"></div>
+    </section>
+
+    <!-- Favoriten -->
+    <section id="favoriten" class="card-section">
+      <h2>Deine Favoriten</h2>
+      <div id="favGrid" class="product-grid"></div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
