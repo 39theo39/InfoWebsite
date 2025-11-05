@@ -29,13 +29,13 @@ const parfums = [
   {name:"Sauvage", brand:"Dior", gender:"Männlich", price:"Über 100 €", season:["Sommer","Herbst"], notes:["Frisch"], occasion:["Freizeit","Ausgehen"], age:["20–30","30–40","über 40"], img:"https://images.pexels.com/photos/12562775/pexels-photo-12562775.jpeg"},
   {name:"Bleu de Chanel", brand:"Chanel", gender:"Männlich", price:"Über 100 €", season:["Herbst","Winter","Sommer"], notes:["Frisch","Holzig"], occasion:["Arbeit","Ausgehen"], age:["20–30","30–40","über 40"], img:"https://images.pexels.com/photos/9202888/pexels-photo-9202888.jpeg"},
   {name:"Coco Mademoiselle", brand:"Chanel", gender:"Weiblich", price:"Über 100 €", season:["Frühling","Sommer"], notes:["Blumig","Süß"], occasion:["Arbeit","Besonderer Anlass"], age:["20–30","30–40","über 40"], img:"https://images.pexels.com/photos/13380129/pexels-photo-13380129.jpeg"},
-  {name:"La Vie Est Belle", brand:"Lancôme", gender:"Weiblich", price:"50–100 €", season:["Frühling","Herbst"], notes:["Süß","Blumig"], occasion:["Freizeit","Besonderer Anlass"], age:["20–30","30–40"], img:},
+  {name:"La Vie Est Belle", brand:"Lancôme", gender:"Weiblich", price:"50–100 €", season:["Frühling","Herbst"], notes:["Süß","Blumig"], occasion:["Freizeit","Besonderer Anlass"], age:["20–30","30–40"], img:"https://the-fragrance-shop.imgix.net/products/57342_3.jpg"},
   {name:"Light Blue", brand:"Dolce & Gabbana", gender:"Neutral", price:"50–100 €", season:["Sommer"], notes:["Frisch","Zitrus"], occasion:["Freizeit"], age:["unter 20","20–30"], img:"https://images.pexels.com/photos/13827110/pexels-photo-13827110.jpeg"},
   {name:"Black Opium", brand:"YSL", gender:"Weiblich", price:"50–100 €", season:["Herbst","Winter"], notes:["Süß","Orientalisch"], occasion:["Ausgehen"], age:["unter 20","20–30","30–40"], img:"https://images.pexels.com/photos/30488680/pexels-photo-30488680.jpeg"},
-  {name:"Good Girl", brand:"Carolina Herrera", gender:"Weiblich", price:"Über 100 €", season:["Herbst","Winter"], notes:["Orientalisch","Süß"], occasion:["Ausgehen","Besonderer Anlass"], age:["20–30","30–40"], img:},
-  {name:"Oud Wood", brand:"Tom Ford", gender:"Neutral", price:"Über 100 €", season:["Winter","Herbst"], notes:["Holzig","Orientalisch"], occasion:["Besonderer Anlass"], age:["30–40","über 40"], img:},
-  {name:"Flowerbomb", brand:"Viktor & Rolf", gender:"Weiblich", price:"Über 100 €", season:["Frühling","Herbst"], notes:["Blumig"], occasion:["Besonderer Anlass","Ausgehen"], age:["20–30","30–40"], img:)},
-  {name:"Bloom", brand:"Gucci", gender:"Weiblich", price:"Über 100 €", season:["Frühling","Sommer"], notes:["Blumig"], occasion:["Freizeit","Arbeit"], age:["20–30","30–40"], img:},
+  {name:"Good Girl", brand:"Carolina Herrera", gender:"Weiblich", price:"Über 100 €", season:["Herbst","Winter"], notes:["Orientalisch","Süß"], occasion:["Ausgehen","Besonderer Anlass"], age:["20–30","30–40"], img:"https://swedishface.com/image/cache/data/carolina-herrera/extra/carolina-herrera-good-girl-eau-de-parfum-50ml--1539-117-0050_6-900x900.jpg"},
+  {name:"Oud Wood", brand:"Tom Ford", gender:"Neutral", price:"Über 100 €", season:["Winter","Herbst"], notes:["Holzig","Orientalisch"], occasion:["Besonderer Anlass"], age:["30–40","über 40"], img:"https://th.bing.com/th?id=OIF.c%2bikUuEnQbxdsAexKMYk9g&rs=1&pid=ImgDetMain&o=7&rm=3"},
+  {name:"Flowerbomb", brand:"Viktor & Rolf", gender:"Weiblich", price:"Über 100 €", season:["Frühling","Herbst"], notes:["Blumig"], occasion:["Besonderer Anlass","Ausgehen"], age:["20–30","30–40"], img:"https://2.bp.blogspot.com/-MJ7sJhTqe2U/T9XQ6IXYwhI/AAAAAAAABeg/s72OgG6hbME/s1600/post+profumi+3.jpg"},
+  {name:"Bloom", brand:"Gucci", gender:"Weiblich", price:"Über 100 €", season:["Frühling","Sommer"], notes:["Blumig"], occasion:["Freizeit","Arbeit"], age:["20–30","30–40"], img:"https://images.pexels.com/photos/19170038/pexels-photo-19170038.jpeg"},
   // --- weitere bekannte Parfums ergänzen bis ~100 Einträge ---
   {name:"Acqua di Gio", brand:"Giorgio Armani", gender:"Männlich", price:"50–100 €", season:["Sommer"], notes:["Frisch"], occasion:["Freizeit","Arbeit"], age:["20–30","30–40"], img:ph("Acqua di Gio")},
   {name:"J'adore", brand:"Dior", gender:"Weiblich", price:"Über 100 €", season:["Frühling"], notes:["Blumig"], occasion:["Besonderer Anlass"], age:["30–40","über 40"], img:ph("J'adore")},
@@ -385,4 +385,5 @@ document.addEventListener('keydown', (e)=> {
 });
 
 // Ende
+
 
