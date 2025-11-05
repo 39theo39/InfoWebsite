@@ -26,16 +26,16 @@ function qSel(name){ return document.querySelector(`input[name="${name}"]:checke
 // -------------------------
 const parfums = [
   // Format: {name, brand, gender, price, season:[], notes:[], occasion:[], age:[], img}
-  {name:"Sauvage", brand:"Dior", gender:"Männlich", price:"Über 100 €", season:["Sommer","Herbst"], notes:["Frisch"], occasion:["Freizeit","Ausgehen"], age:["20–30","30–40","über 40"], img:"https://media.sephora.eu/content/dam/digital/pim/published/D/DIOR/DIOR/2373-media_2.jpg?scaleWidth=265&scaleHeight=265&scaleMode=fit"},
-  {name:"Bleu de Chanel", brand:"Chanel", gender:"Männlich", price:"Über 100 €", season:["Herbst","Winter","Sommer"], notes:["Frisch","Holzig"], occasion:["Arbeit","Ausgehen"], age:["20–30","30–40","über 40"], img:ph("Bleu de Chanel")},
-  {name:"Coco Mademoiselle", brand:"Chanel", gender:"Weiblich", price:"Über 100 €", season:["Frühling","Sommer"], notes:["Blumig","Süß"], occasion:["Arbeit","Besonderer Anlass"], age:["20–30","30–40","über 40"], img:ph("Coco Mademoiselle")},
-  {name:"La Vie Est Belle", brand:"Lancôme", gender:"Weiblich", price:"50–100 €", season:["Frühling","Herbst"], notes:["Süß","Blumig"], occasion:["Freizeit","Besonderer Anlass"], age:["20–30","30–40"], img:ph("La Vie Est Belle")},
-  {name:"Light Blue", brand:"Dolce & Gabbana", gender:"Neutral", price:"50–100 €", season:["Sommer"], notes:["Frisch","Zitrus"], occasion:["Freizeit"], age:["unter 20","20–30"], img:ph("Light Blue")},
-  {name:"Black Opium", brand:"YSL", gender:"Weiblich", price:"50–100 €", season:["Herbst","Winter"], notes:["Süß","Orientalisch"], occasion:["Ausgehen"], age:["unter 20","20–30","30–40"], img:ph("Black Opium")},
-  {name:"Good Girl", brand:"Carolina Herrera", gender:"Weiblich", price:"Über 100 €", season:["Herbst","Winter"], notes:["Orientalisch","Süß"], occasion:["Ausgehen","Besonderer Anlass"], age:["20–30","30–40"], img:ph("Good Girl")},
-  {name:"Oud Wood", brand:"Tom Ford", gender:"Neutral", price:"Über 100 €", season:["Winter","Herbst"], notes:["Holzig","Orientalisch"], occasion:["Besonderer Anlass"], age:["30–40","über 40"], img:ph("Oud Wood")},
-  {name:"Flowerbomb", brand:"Viktor & Rolf", gender:"Weiblich", price:"Über 100 €", season:["Frühling","Herbst"], notes:["Blumig"], occasion:["Besonderer Anlass","Ausgehen"], age:["20–30","30–40"], img:ph("Flowerbomb")},
-  {name:"Bloom", brand:"Gucci", gender:"Weiblich", price:"Über 100 €", season:["Frühling","Sommer"], notes:["Blumig"], occasion:["Freizeit","Arbeit"], age:["20–30","30–40"], img:ph("Gucci Bloom")},
+  {name:"Sauvage", brand:"Dior", gender:"Männlich", price:"Über 100 €", season:["Sommer","Herbst"], notes:["Frisch"], occasion:["Freizeit","Ausgehen"], age:["20–30","30–40","über 40"], img:"https://images.pexels.com/photos/12562775/pexels-photo-12562775.jpeg"},
+  {name:"Bleu de Chanel", brand:"Chanel", gender:"Männlich", price:"Über 100 €", season:["Herbst","Winter","Sommer"], notes:["Frisch","Holzig"], occasion:["Arbeit","Ausgehen"], age:["20–30","30–40","über 40"], img:"https://images.pexels.com/photos/9202888/pexels-photo-9202888.jpeg"},
+  {name:"Coco Mademoiselle", brand:"Chanel", gender:"Weiblich", price:"Über 100 €", season:["Frühling","Sommer"], notes:["Blumig","Süß"], occasion:["Arbeit","Besonderer Anlass"], age:["20–30","30–40","über 40"], img:"https://images.pexels.com/photos/13380129/pexels-photo-13380129.jpeg"},
+  {name:"La Vie Est Belle", brand:"Lancôme", gender:"Weiblich", price:"50–100 €", season:["Frühling","Herbst"], notes:["Süß","Blumig"], occasion:["Freizeit","Besonderer Anlass"], age:["20–30","30–40"], img:},
+  {name:"Light Blue", brand:"Dolce & Gabbana", gender:"Neutral", price:"50–100 €", season:["Sommer"], notes:["Frisch","Zitrus"], occasion:["Freizeit"], age:["unter 20","20–30"], img:"https://images.pexels.com/photos/13827110/pexels-photo-13827110.jpeg"},
+  {name:"Black Opium", brand:"YSL", gender:"Weiblich", price:"50–100 €", season:["Herbst","Winter"], notes:["Süß","Orientalisch"], occasion:["Ausgehen"], age:["unter 20","20–30","30–40"], img:"https://images.pexels.com/photos/30488680/pexels-photo-30488680.jpeg"},
+  {name:"Good Girl", brand:"Carolina Herrera", gender:"Weiblich", price:"Über 100 €", season:["Herbst","Winter"], notes:["Orientalisch","Süß"], occasion:["Ausgehen","Besonderer Anlass"], age:["20–30","30–40"], img:},
+  {name:"Oud Wood", brand:"Tom Ford", gender:"Neutral", price:"Über 100 €", season:["Winter","Herbst"], notes:["Holzig","Orientalisch"], occasion:["Besonderer Anlass"], age:["30–40","über 40"], img:},
+  {name:"Flowerbomb", brand:"Viktor & Rolf", gender:"Weiblich", price:"Über 100 €", season:["Frühling","Herbst"], notes:["Blumig"], occasion:["Besonderer Anlass","Ausgehen"], age:["20–30","30–40"], img:)},
+  {name:"Bloom", brand:"Gucci", gender:"Weiblich", price:"Über 100 €", season:["Frühling","Sommer"], notes:["Blumig"], occasion:["Freizeit","Arbeit"], age:["20–30","30–40"], img:},
   // --- weitere bekannte Parfums ergänzen bis ~100 Einträge ---
   {name:"Acqua di Gio", brand:"Giorgio Armani", gender:"Männlich", price:"50–100 €", season:["Sommer"], notes:["Frisch"], occasion:["Freizeit","Arbeit"], age:["20–30","30–40"], img:ph("Acqua di Gio")},
   {name:"J'adore", brand:"Dior", gender:"Weiblich", price:"Über 100 €", season:["Frühling"], notes:["Blumig"], occasion:["Besonderer Anlass"], age:["30–40","über 40"], img:ph("J'adore")},
@@ -385,3 +385,4 @@ document.addEventListener('keydown', (e)=> {
 });
 
 // Ende
+
